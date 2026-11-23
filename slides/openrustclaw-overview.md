@@ -361,7 +361,7 @@ Speaker Notes: Wrap up with key takeaways. Open for Q&A. Have the architecture d
 
 ```bash
 # Clone and build
-git clone https://github.com/hprincivil/OpenRustClaw.git
+git clone https://github.com/hannsxpeter/OpenRustClaw.git
 cd OpenRustClaw
 cargo build --workspace
 
@@ -406,7 +406,7 @@ Speaker Notes: Thank the audience. Provide contact information. Be ready for tec
 
 ### Contact
 
-🐙 **GitHub**: github.com/hprincivil/OpenRustClaw  
+🐙 **GitHub**: github.com/hannsxpeter/OpenRustClaw <!-- check-style: allow --><br>
 📧 **Issues & Feature Requests**: GitHub Issues  
 💬 **Discussions**: GitHub Discussions
 

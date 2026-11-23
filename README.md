@@ -1,6 +1,6 @@
 # OpenRustClaw
 
-[![CI](https://github.com/aihxp/OpenRustClaw/actions/workflows/ci.yml/badge.svg)](https://github.com/aihxp/OpenRustClaw/actions/workflows/ci.yml)
+[![CI](https://github.com/hannsxpeter/OpenRustClaw/actions/workflows/ci.yml/badge.svg)](https://github.com/hannsxpeter/OpenRustClaw/actions/workflows/ci.yml)
 [![Core Crate](https://img.shields.io/crates/v/openrustclaw-core)](https://crates.io/crates/openrustclaw-core)
 [![Rust](https://img.shields.io/badge/rust-2024_edition-orange.svg)](https://www.rust-lang.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)

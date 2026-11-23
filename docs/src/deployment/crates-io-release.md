@@ -16,8 +16,8 @@ As of the current shipped baseline:
 
 - crates.io: <https://crates.io/crates/openrustclaw-core>
 - docs.rs: <https://docs.rs/crate/openrustclaw-core/latest>
-- GitHub semver release: <https://github.com/aihxp/OpenRustClaw/releases/tag/v1.4.10>
-- GitHub milestone archive release: <https://github.com/aihxp/OpenRustClaw/releases/tag/v1.47>
+- GitHub semver release: <https://github.com/hannsxpeter/OpenRustClaw/releases/tag/v1.4.10>
+- GitHub milestone archive release: <https://github.com/hannsxpeter/OpenRustClaw/releases/tag/v1.47>
 
 Only the semver tag and crates.io publication define the public crate release line. Milestone archive releases can carry runtime binaries and release notes, but they do not imply a new crates.io publish or docs.rs version.
 

@@ -25,7 +25,7 @@ OpenRustClaw is self-hosted and open source. You can start in `solo`, `team`, `c
 ## 1. Clone and Build
 
 ```bash
-git clone https://github.com/aihxp/OpenRustClaw.git
+git clone https://github.com/hannsxpeter/OpenRustClaw.git
 cd OpenRustClaw
 cargo build --workspace
 ```

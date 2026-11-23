@@ -13,5 +13,5 @@ Closed the milestone with one repeatable verification bundle that covers both re
 - `bash scripts/github-repo-admin.sh validate-local`
 - `bash scripts/github-repo-admin.sh check-live`
 - `bash scripts/github-actions-admin.sh check-main-ci`
-- `env -u GITHUB_TOKEN gh run view 23673066045 --repo aihxp/OpenRustClaw --json status,conclusion,jobs,url`
+- `env -u GITHUB_TOKEN gh run view 23673066045 --repo hannsxpeter/OpenRustClaw --json status,conclusion,jobs,url`
 

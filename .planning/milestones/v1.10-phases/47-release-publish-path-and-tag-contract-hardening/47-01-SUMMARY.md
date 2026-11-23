@@ -9,8 +9,8 @@
 ## Evidence
 
 - `bash scripts/github-actions-admin.sh check-release-binaries v1.10-rc1`
-- `https://github.com/aihxp/OpenRustClaw/actions/runs/23674815012`
-- Public release asset listing at `https://github.com/aihxp/OpenRustClaw/releases/tag/v1.10-rc1`
+- `https://github.com/hannsxpeter/OpenRustClaw/actions/runs/23674815012`
+- Public release asset listing at `https://github.com/hannsxpeter/OpenRustClaw/releases/tag/v1.10-rc1`
 - Published binary assets:
   - `openrustclaw-0.1.0-x86_64-unknown-linux-gnu.tar.gz`
   - `openrustclaw-0.1.0-x86_64-unknown-linux-gnu.tar.gz.sha256`

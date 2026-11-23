@@ -87,7 +87,7 @@ Speaker Notes: Walk through the installation process step by step. Pause for que
 
 ```bash
 # Clone the repository
-git clone https://github.com/hprincivil/OpenRustClaw.git
+git clone https://github.com/hannsxpeter/OpenRustClaw.git
 cd OpenRustClaw
 
 # Verify structure
@@ -559,7 +559,7 @@ RUST_LOG=debug cargo run --bin openrustclaw -- start
 tail -f logs/openrustclaw.log
 
 # GitHub Issues
-https://github.com/hprincivil/OpenRustClaw/issues
+https://github.com/hannsxpeter/OpenRustClaw/issues
 
 # Documentation
 cat docs/src/troubleshooting.md
@@ -675,7 +675,7 @@ cargo run --bin openrustclaw -- --help
 
 ### Connect
 
-🐙 **GitHub**: github.com/hprincivil/OpenRustClaw  
+🐙 **GitHub**: github.com/hannsxpeter/OpenRustClaw <!-- check-style: allow --><br>
 ⭐ **Star the repo** to show support!  
 🐛 **Issues**: Report bugs and request features  
 💬 **Discussions**: Share your projects

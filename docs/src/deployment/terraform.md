@@ -76,7 +76,7 @@ az aks get-credentials --resource-group openrustclaw-rg --name openrustclaw
 
 ```hcl
 module "openrustclaw" {
-  source = "github.com/openrustclaw/openrustclaw//deployments/terraform/aws"
+  source = "github.com/hannsxpeter/OpenRustClaw//deployments/terraform/aws"
 
   cluster_name = "openrustclaw-prod"
   environment  = "production"
@@ -114,7 +114,7 @@ module "openrustclaw" {
 
 ```hcl
 module "openrustclaw" {
-  source = "github.com/openrustclaw/openrustclaw//deployments/terraform/gcp"
+  source = "github.com/hannsxpeter/OpenRustClaw//deployments/terraform/gcp"
 
   project_id   = "my-project"
   cluster_name = "openrustclaw-prod"
@@ -147,7 +147,7 @@ module "openrustclaw" {
 
 ```hcl
 module "openrustclaw" {
-  source = "github.com/openrustclaw/openrustclaw//deployments/terraform/azure"
+  source = "github.com/hannsxpeter/OpenRustClaw//deployments/terraform/azure"
 
   cluster_name  = "openrustclaw-prod"
   location      = "West US 2"

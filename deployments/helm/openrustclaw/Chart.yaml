@@ -6,7 +6,7 @@ version: 0.1.0
 appVersion: "0.1.0"
 home: https://openrustclaw.io
 sources:
-  - https://github.com/openrustclaw/openrustclaw
+  - https://github.com/hannsxpeter/OpenRustClaw
 maintainers:
   - name: OpenRustClaw Team
     email: team@openrustclaw.io

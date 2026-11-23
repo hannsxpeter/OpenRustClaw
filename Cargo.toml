@@ -52,8 +52,8 @@ members = [
 version = "1.4.10"
 edition = "2024"
 license = "MIT"
-authors = ["OpenRustClaw Contributors"]
-repository = "https://github.com/aihxp/OpenRustClaw"
+authors = ["hannsxpeter", "OpenRustClaw Contributors"]
+repository = "https://github.com/hannsxpeter/OpenRustClaw"
 
 [workspace.dependencies]
 # Async runtime

@@ -12,11 +12,11 @@ This guide covers deploying OpenRustClaw on Kubernetes using Helm charts.
 
 ## Quick Start
 
-### 1. Add Helm Repository
+### 1. Clone the Canonical Repository
 
 ```bash
-helm repo add openrustclaw https://openrustclaw.github.io/charts
-helm repo update
+git clone https://github.com/hannsxpeter/OpenRustClaw.git
+cd OpenRustClaw
 ```
 
 ### 2. Create Namespace
@@ -28,11 +28,11 @@ kubectl create namespace openrustclaw
 ### 3. Install with Default Values
 
 ```bash
-helm install openrustclaw openrustclaw/openrustclaw \
-  --namespace openrustclaw \
-  --set config.providers.anthropic.apiKey="your-key" \
-  --set config.providers.anthropic.enabled=true
+helm install openrustclaw ./deployments/helm/openrustclaw \
+  --namespace openrustclaw
 ```
+
+To configure LLM provider API keys (such as `ANTHROPIC_API_KEY`), create an external Kubernetes `Secret` and set `secrets.useExternal=true` and `secrets.externalSecretName` as shown in [Production Deployment](#production-deployment).
 
 ### 4. Verify Installation
 
@@ -125,11 +125,6 @@ persistence:
 podDisruptionBudget:
   enabled: true
   minAvailable: 2
-
-monitoring:
-  serviceMonitor:
-    enabled: true
-    namespace: monitoring
 ```
 
 ### 2. Create External Secret
@@ -146,7 +141,7 @@ kubectl create secret generic openrustclaw-secrets \
 ### 3. Deploy
 
 ```bash
-helm upgrade --install openrustclaw openrustclaw/openrustclaw \
+helm upgrade --install openrustclaw ./deployments/helm/openrustclaw \
   --namespace openrustclaw \
   -f values-production.yaml
 ```
@@ -227,25 +222,9 @@ config:
 
 ## Monitoring
 
-### Prometheus ServiceMonitor
-
-```yaml
-monitoring:
-  serviceMonitor:
-    enabled: true
-    namespace: monitoring
-    interval: 30s
-    labels:
-      release: prometheus
-```
-
 ### Grafana Dashboard
 
-Import dashboard ID `openrustclaw-001` or apply:
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/openrustclaw/openrustclaw/main/deployments/grafana-dashboard.yaml
-```
+Import the tracked dashboard JSON from `grafana/dashboard.json` in your cloned repository (or [`grafana/dashboard.json`](https://github.com/hannsxpeter/OpenRustClaw/blob/main/grafana/dashboard.json)) in Grafana via **Dashboards -> New -> Import dashboard** (upload the JSON file, or paste its contents and click **Load** before **Import**). See the [Grafana import documentation](https://grafana.com/docs/grafana/latest/visualizations/dashboards/build-dashboards/import-dashboards/) for details.
 
 ---
 

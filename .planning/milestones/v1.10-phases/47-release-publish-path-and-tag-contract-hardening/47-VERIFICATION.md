@@ -17,9 +17,9 @@ score: "3/3 must-haves verified"
 
 - `bash scripts/github-actions-admin.sh check-release-binaries v1.10-rc1`
 - `bash scripts/github-actions-admin.sh check-release-binaries`
-- `python3 - <<'PY' ... https://github.com/aihxp/OpenRustClaw/releases/expanded_assets/v1.10-rc1 ... PY`
-- `https://github.com/aihxp/OpenRustClaw/actions/runs/23674815012`
-- `https://github.com/aihxp/OpenRustClaw/releases/tag/v1.10-rc1`
+- `python3 - <<'PY' ... https://github.com/hannsxpeter/OpenRustClaw/releases/expanded_assets/v1.10-rc1 ... PY`
+- `https://github.com/hannsxpeter/OpenRustClaw/actions/runs/23674815012`
+- `https://github.com/hannsxpeter/OpenRustClaw/releases/tag/v1.10-rc1`
 
 ## Result
 

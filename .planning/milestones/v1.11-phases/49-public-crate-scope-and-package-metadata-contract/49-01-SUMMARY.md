@@ -3,7 +3,7 @@
 ## What Changed
 
 - Chose `openrustclaw-core` as the first public crates.io target for v1.11 because it has no internal path-crate dependencies and already has a crate-local README.
-- Updated the workspace repository URL to the live `aihxp/OpenRustClaw` repo.
+- Updated the workspace repository URL to the live `hannsxpeter/OpenRustClaw` repo.
 - Added crates.io-facing metadata to `openrustclaw-core`: `readme`, `repository`, `homepage`, `documentation`, `keywords`, and `categories`.
 
 ## Result
