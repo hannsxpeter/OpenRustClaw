@@ -12,7 +12,7 @@
 - `bash -n scripts/github-actions-admin.sh`
 - `bash scripts/github-actions-admin.sh check-main-ci`
 - `bash scripts/github-actions-admin.sh check-release-binaries main`
-- `https://github.com/aihxp/OpenRustClaw/actions/runs/23674272625`
+- `https://github.com/hannsxpeter/OpenRustClaw/actions/runs/23674272625`
 
 ## Outcome
 

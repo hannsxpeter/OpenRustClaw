@@ -4,10 +4,10 @@ Applied the canonical repo metadata to the live GitHub repository and verified t
 
 ## Shipped
 
-- Updated the live GitHub repo description for `aihxp/OpenRustClaw`
+- Updated the live GitHub repo description for `hannsxpeter/OpenRustClaw`
 - Set the repo homepage to the canonical GitHub repo URL
 - Verified the public repo topics and About metadata match `.github/repository-metadata.json`
-- Corrected the local GitHub CLI auth identity to `aihxp` so local admin tooling matches the renamed account
+- Corrected the local GitHub CLI auth identity to the former handle so local admin tooling matched the renamed account
 
 ## Verification
 

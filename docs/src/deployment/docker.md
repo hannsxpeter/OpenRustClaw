@@ -22,8 +22,8 @@ OpenRustClaw uses a multi-stage Docker build to create optimized production imag
 ### 1. Clone and Configure
 
 ```bash
-git clone https://github.com/openrustclaw/openrustclaw.git
-cd openrustclaw
+git clone https://github.com/hannsxpeter/OpenRustClaw.git
+cd OpenRustClaw
 
 # Copy and edit environment configuration
 cp .env.example .env

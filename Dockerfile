@@ -107,4 +107,4 @@ LABEL org.opencontainers.image.title="OpenRustClaw" \
       org.opencontainers.image.description="Rust-native AI agent platform" \
       org.opencontainers.image.version="0.1.0" \
       org.opencontainers.image.licenses="MIT" \
-      org.opencontainers.image.source="https://github.com/openrustclaw/openrustclaw"
+      org.opencontainers.image.source="https://github.com/hannsxpeter/OpenRustClaw"

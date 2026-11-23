@@ -20,7 +20,7 @@ score: "3/3 must-haves verified"
 - `bash scripts/check-runtime-budgets.sh`
 - `bash scripts/github-actions-admin.sh workflows`
 - `bash scripts/github-actions-admin.sh check-main-ci`
-- `env -u GITHUB_TOKEN gh run view 23673066043 --repo aihxp/OpenRustClaw --json status,conclusion,jobs,url`
+- `env -u GITHUB_TOKEN gh run view 23673066043 --repo hannsxpeter/OpenRustClaw --json status,conclusion,jobs,url`
 
 ## Result
 

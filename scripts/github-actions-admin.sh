@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
-REPO_DEFAULT="aihxp/OpenRustClaw"
+REPO_DEFAULT="hannsxpeter/OpenRustClaw"
 REPO="${GITHUB_REPO:-$REPO_DEFAULT}"
 
 usage() {
@@ -14,7 +14,7 @@ Usage:
   scripts/github-actions-admin.sh check-release-binaries [ref]
 
 Environment:
-  GITHUB_REPO              Optional owner/name override (default: aihxp/OpenRustClaw)
+  GITHUB_REPO              Optional owner/name override (default: hannsxpeter/OpenRustClaw)
   GH_TOKEN                 Optional GitHub token override
   GITHUB_TOKEN             Optional fallback token if no gh keyring token exists
 EOF

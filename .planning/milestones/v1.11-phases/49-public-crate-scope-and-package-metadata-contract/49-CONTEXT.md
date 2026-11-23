@@ -12,7 +12,7 @@ Define the first publishable OpenRustClaw crate set and normalize the metadata a
 - The workspace contains a large mixed set of internal crates, tests, benches, runtime binaries, and SDK-style crates.
 - `openrustclaw-core` is the clearest first public target because it has no internal path-crate dependencies and already includes a crate-local `README.md`.
 - `cargo package -p openrustclaw-core --allow-dirty --no-verify` already succeeds, but Cargo warns that the crate is missing `documentation`, `homepage`, and `repository` metadata.
-- The workspace repository metadata still points at the stale `openrustclaw/openrustclaw` URL instead of the live `aihxp/OpenRustClaw` repo.
+- The workspace repository metadata still points at the stale `openrustclaw/openrustclaw` URL instead of the live `hannsxpeter/OpenRustClaw` repo.
 
 ## Constraints
 

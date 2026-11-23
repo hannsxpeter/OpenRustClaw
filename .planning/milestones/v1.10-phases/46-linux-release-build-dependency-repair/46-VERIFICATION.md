@@ -19,7 +19,7 @@ score: "3/3 must-haves verified"
 - `python3 - <<'PY' ... yaml.safe_load('.github/workflows/release-binaries.yml') ... PY`
 - `bash scripts/github-actions-admin.sh check-main-ci`
 - `bash scripts/github-actions-admin.sh check-release-binaries main`
-- `env -u GITHUB_TOKEN gh run view 23674272625 --repo aihxp/OpenRustClaw --json status,conclusion,jobs,url`
+- `env -u GITHUB_TOKEN gh run view 23674272625 --repo hannsxpeter/OpenRustClaw --json status,conclusion,jobs,url`
 
 ## Result
 

@@ -11,8 +11,8 @@ Audited the live `main` workflow failures against the local workflow definitions
 
 ## Verification
 
-- `env -u GITHUB_TOKEN gh run view 23672652828 --repo aihxp/OpenRustClaw --json status,conclusion,jobs,url`
-- `env -u GITHUB_TOKEN gh api repos/aihxp/OpenRustClaw/actions/jobs/68969213268/logs`
-- `env -u GITHUB_TOKEN gh api repos/aihxp/OpenRustClaw/actions/jobs/68969813746/logs`
-- `env -u GITHUB_TOKEN gh api repos/aihxp/OpenRustClaw/actions/jobs/68969813750/logs`
+- `env -u GITHUB_TOKEN gh run view 23672652828 --repo hannsxpeter/OpenRustClaw --json status,conclusion,jobs,url`
+- `env -u GITHUB_TOKEN gh api repos/hannsxpeter/OpenRustClaw/actions/jobs/68969213268/logs`
+- `env -u GITHUB_TOKEN gh api repos/hannsxpeter/OpenRustClaw/actions/jobs/68969813746/logs`
+- `env -u GITHUB_TOKEN gh api repos/hannsxpeter/OpenRustClaw/actions/jobs/68969813750/logs`
 

@@ -4423,14 +4423,22 @@ async fn fetch_runtime_update_check() -> Result<RuntimeUpdateCheck> {
     })
 }
 
+const CANONICAL_GITHUB_REPOSITORY_PATH: &str = "hannsxpeter/OpenRustClaw";
+
 fn github_tags_api_url(page_size: usize) -> String {
-    let repository = env!("CARGO_PKG_REPOSITORY")
+    github_tags_api_url_for_repository(env!("CARGO_PKG_REPOSITORY"), page_size)
+}
+
+fn github_tags_api_url_for_repository(repository: &str, page_size: usize) -> String {
+    let path = repository
+        .trim()
         .trim_end_matches('/')
-        .trim_end_matches(".git");
-    if let Some(path) = repository.strip_prefix("https://github.com/") {
-        return format!("https://api.github.com/repos/{path}/tags?per_page={page_size}");
-    }
-    format!("https://api.github.com/repos/aihxp/OpenRustClaw/tags?per_page={page_size}")
+        .trim_end_matches(".git")
+        .trim_end_matches('/')
+        .strip_prefix("https://github.com/")
+        .filter(|path| !path.is_empty())
+        .unwrap_or(CANONICAL_GITHUB_REPOSITORY_PATH);
+    format!("https://api.github.com/repos/{path}/tags?per_page={page_size}")
 }
 
 fn parse_latest_release_tag(raw: &str) -> Option<String> {
@@ -5742,5 +5750,33 @@ mod tests {
         assert!(!plan.restart_required);
         assert_eq!(plan.provider_changes.len(), 1);
         Ok(())
+    }
+
+    #[test]
+    fn github_tags_api_url_targets_canonical_repository() {
+        assert_eq!(
+            env!("CARGO_PKG_REPOSITORY"),
+            "https://github.com/hannsxpeter/OpenRustClaw"
+        );
+        assert_eq!(
+            github_tags_api_url(10),
+            "https://api.github.com/repos/hannsxpeter/OpenRustClaw/tags?per_page=10"
+        );
+        assert_eq!(
+            github_tags_api_url_for_repository("https://github.com/example/OpenRustClaw.git/", 25),
+            "https://api.github.com/repos/example/OpenRustClaw/tags?per_page=25"
+        );
+        assert_eq!(
+            github_tags_api_url_for_repository("https://gitlab.com/example/OpenRustClaw", 10),
+            "https://api.github.com/repos/hannsxpeter/OpenRustClaw/tags?per_page=10"
+        );
+        assert_eq!(
+            github_tags_api_url_for_repository("", 10),
+            "https://api.github.com/repos/hannsxpeter/OpenRustClaw/tags?per_page=10"
+        );
+        assert_eq!(
+            github_tags_api_url_for_repository("https://github.com/", 10),
+            "https://api.github.com/repos/hannsxpeter/OpenRustClaw/tags?per_page=10"
+        );
     }
 }
